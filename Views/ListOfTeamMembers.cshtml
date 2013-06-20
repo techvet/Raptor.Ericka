@@ -1,0 +1,49 @@
+@using Orchard.ContentManagement
+@{
+    var buildShapes = Model.BuildShapes;
+}
+<div class="hero">
+    <!-- Title. Don't forget the <span> tag -->
+    <h3><span>Our Team</span></h3>
+</div>
+<!-- Our team -->
+<!-- Teams -->
+<div class="about">
+    <div class="row">
+        <div class="span12">
+            <div class="teams">
+                <div class="row">
+                    @foreach (dynamic shape in buildShapes()) {
+                        dynamic teamMember = shape.ContentItem.TeamMember;
+                        <div class="span3">
+                            <!-- Staff -->
+                            <div class="staff">
+                                <!-- Picture -->
+                                <div class="pic">
+                                    <img src="@Url.Content(teamMember.Photo.Url)" alt="" />
+                                </div>
+                                <!-- Details -->
+                                <div class="details">
+                                    <!-- Name and designation -->
+                                    <div class="desig pull-left">
+                                        <p class="name">@teamMember.Name.Value</p>
+                                        <em>@teamMember.Position.Value</em>
+                                    </div>
+                                    <!-- Social media details. Replace # with profile links -->
+                                    <div class="asocial pull-right">
+                                        <a href="#"><i class="icon-facebook"></i></a>
+                                        <a href="#"><i class="icon-twitter"></i></a>
+                                        <a href="#"><i class="icon-linkedin"></i></a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <hr />
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our team ends -->

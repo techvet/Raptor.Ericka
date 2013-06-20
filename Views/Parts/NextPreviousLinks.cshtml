@@ -1,0 +1,26 @@
+﻿@using Orchard.ContentManagement
+
+@{
+    Style.Include("NextPrevious.css");
+    string nextClass = "nextLink";
+}
+@if (Model.PreviousItem != null || Model.NextItem != null) {
+    <div class="navigation button">
+        <div class="pull-left">
+            @if (Model.PreviousItem != null) {
+                ContentItem previousItem = Model.PreviousItem;
+                nextClass = "nextLinkWithPrevious";
+
+                <a href="@Url.ItemDisplayUrl(previousItem)">&laquo; Previous Post</a>
+            }
+        </div>
+        <div class="pull-right">
+            @if (Model.NextItem != null) {
+                ContentItem nextItem = Model.NextItem;
+    
+                <a href="@Url.ItemDisplayUrl(nextItem)">Next Post &raquo;</a>
+            }
+        </div>
+        <div class="clearfix"></div>
+    </div>
+}

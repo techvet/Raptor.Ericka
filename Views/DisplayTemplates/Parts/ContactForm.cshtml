@@ -1,0 +1,113 @@
+﻿@using Orchard.Utility.Extensions
+@model PlanetTelex.ContactForm.ViewModels.ContactFormViewModel
+@{
+    Script.Require("jQuery");
+    const string displayNone = "style=\"display:none\"";
+    var displaySubject = Model.ShowSubjectField ? string.Empty : displayNone;
+    var displayName = Model.ShowNameField ? string.Empty : displayNone;
+}
+<!-- Contact hero -->
+<div class="hero">
+    <!-- Title. Don't forget the <span> tag -->
+    <h3><span>Contact</span></h3>
+    <p>If you would like to get in contact with me, please use the Contact Form below or email me directly</p>
+</div>
+<!-- Contact -->
+<div class="contact">
+    <div class="row">
+        <div class="span12">
+            <!-- Google maps -->
+            <div class="gmap">
+                <!-- Google Maps. Replace the below iframe with your Google Maps embed code -->
+                <iframe height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Elk+Grove,+CA&amp;aq=&amp;oq=6846+Boa+No&amp;sll=38.381926,-121.42334&amp;sspn=0.011354,0.022724&amp;ie=UTF8&amp;hq=&amp;hnear=Elk+Grove,+Sacramento,+California&amp;t=m&amp;z=12&amp;iwloc=near&amp;output=embed"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="span6">
+            <div class="cwell">
+                <!-- Contact form -->
+                <h5>Contact Form</h5>
+                <hr />
+                <div class="form">
+                    <!-- Contact form -->
+                    @{using (Html.BeginForm("sendcontactemail", "contactform", new { area = "PlanetTelex.ContactForm" }, FormMethod.Post, new { @class = "contact-form form-horizontal" })) {
+                        <!-- Name -->
+                        <div class="control-group">
+                            <label class="control-label" for="Name">Name</label>
+                            <div class="controls">
+                                <input id="Name" class="input-medium" name="Name" type="text" placeholder="Your Name" />
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="control-group">
+                            <label class="control-label" for="Email">Email</label>
+                            <div class="controls">
+                                <input id="Email" class="input-medium" name="Email" type="text" placeholder="Email Address" />
+                            </div>
+                        </div>
+                        <!-- Subject -->
+                        <div class="control-group">
+                            <label class="control-label" for="Subject">Subject</label>
+                            <div class="controls">
+                                <input id="Subject" class="input-medium" name="Subject" type="text" placeholder="Subject" />
+                            </div>
+                        </div>
+                        <!-- Message -->
+                        <div class="control-group">
+                            <label class="control-label" for="Message">Message</label>
+                            <div class="controls">
+                                <textarea id="Message" class="input-medium" name="Message" placeholder="Comments or Inquiry" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="@Context.Request.ToUrlString()" />
+                        <input id="Id" name="Id" type="hidden" value="@Model.ContentRecordId" />
+                        @Html.AntiForgeryTokenOrchard()
+                        <!-- Buttons -->
+                        <div class="form-actions">
+                            <!-- Buttons -->
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="reset" class="btn">Reset</button>
+                        </div>
+                      }
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="span6">
+            <div class="cwell">
+                <!-- Address section -->
+                <h5>Address</h5>
+                <hr />
+                <div class="address">
+                    <address>
+                        <!-- Company name -->
+                        <strong>Your Name</strong><br>
+                        <!-- Address -->
+                        Elk Grove, CA 95757<br>
+                        <!-- Phone number -->
+                        <abbr title="Phone">P:</abbr>
+                        (123) 456-7890.
+                    </address>
+
+                    <address>
+                        <!-- Name -->
+                        <strong>Email</strong><br>
+                        <!-- Email -->
+                        <a href="mailto:#">yourname@email.com</a>
+                    </address>
+
+                    <!-- Social media icons -->
+                    <strong>Get in touch:</strong>
+                    <div class="social">
+                        <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="icon-twitter" target="_blank"></i></a>
+                        <a href="#" target="_blank"><i class="icon-linkedin" target="_blank"></i></a>
+                        <a href="#" target="_blank"><i class="icon-google-plus" target="_blank"></i></a>
+                        <a href="#" target="_blank"><i class="icon-pinterest" target="_blank"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
