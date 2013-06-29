@@ -2,15 +2,14 @@
 @{
     var buildShapes = Model.BuildShapes;
 }
-<div class="hero">
-    <!-- Title. Don't forget the <span> tag -->
-    <h3><span>Our Team</span></h3>
-</div>
-<!-- Our team -->
-<!-- Teams -->
+<!-- About starts -->
 <div class="about">
     <div class="row">
         <div class="span12">
+            <!-- About hero -->
+            <div class="about-hero">
+                <p><span class="hightlight">We Started Raptor Concepts in 2005</span>. Praesent at tellus porttitor nisl porttitor sagittis. Mauris in massa ligula, a tempor nulla. Ut tempus interdum mauris vel vehicula. Nulla <span class="hightlight">ullamcorper tortor</span> non felis commodo in sagittis est accumsan.</p>
+            </div>
             <div class="teams">
                 <div class="row">
                     @foreach (dynamic shape in buildShapes()) {
@@ -36,8 +35,9 @@
                                         <a href="@teamMember.LinkedIn.Value" target="@teamMember.LinkedIn.Target"><i class="icon-linkedin"></i></a>
                                     </div>
                                     <div class="clearfix"></div>
+                                    <!-- Description -->
+                                    <p class="adesc">@teamMember.Description.Value</p>
                                 </div>
-                                <hr />
                             </div>
                         </div>
                     }
