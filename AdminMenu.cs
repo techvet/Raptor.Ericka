@@ -16,17 +16,18 @@ namespace Raptor.Ericka {
         public void GetNavigation(NavigationBuilder builder) {
             var themeName = _siteThemeService.GetSiteTheme();
             if (themeName.Name == Constants.THEME_NAME) {
-                builder.Add(T("Themes"), "10", BuildMenu);
+                builder.AddImageSet("themes")
+                    .Add(T("Themes"), "10", BuildMenu);
             }
         }
 
         private void BuildMenu(NavigationItemBuilder menu) {
-            menu.Add(T("foo"), "10.1",
+            menu.Add(T("foo"), "10.0",
                 item => item
                     .Action("Index", "Admin", new { area = Constants.ROUTES_AREA_NAME })
                     .Permission(Raptor.Ericka.Permissions.ManageThemeSettings)
             );
-            menu.Add(T("Accent Color"), "10.2",
+            menu.Add(T("Accent Color"), "10.1",
                 item => item
                     .Action("Index", "Admin", new { area = Constants.ROUTES_AREA_NAME })
                     .Permission(Raptor.Ericka.Permissions.ManageThemeSettings)
