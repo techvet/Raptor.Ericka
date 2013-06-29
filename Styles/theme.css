@@ -1,21 +1,21 @@
 /* sticky footer */
-html, body { height: 100%; } /* The html and body elements cannot have any padding or margin. */
-#layout-wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -273px; } /* Negative indent footer by it's height */
-#push, #footer { height: 270px; } /* Set the fixed height of the footer here */
+html, body { height: 100%; }
+/* The html and body elements cannot have any padding or margin. */
+#layout-wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -273px; }
+/* Negative indent footer by it's height */
+#push, #footer { height: 270px; }
+/* Set the fixed height of the footer here */
 #footer { margin-top: 0; padding-top: 0; }
 .content { margin-bottom: 20px; }
+
 @media (max-width: 767px) {
-    #footer { margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; } /* Lastly, apply responsive CSS fixes as necessary */
+    #footer { margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; }
+    /* Lastly, apply responsive CSS fixes as necessary */
 }
-
-/* move top border to header container instead of body container so sticky footer works - be sure to match color */
-body { border-top: none !important; }
-#layout-wrapper > header { border-top: 3px solid #30add1; }
-
-
 
 /* remove styling on header tag for article blocks */
 article header { padding: 0; border-bottom: none; }
+
 @media (max-width: 767px) {
     article header { margin-left: 0px; margin-right: 0px; }
 }
@@ -32,6 +32,11 @@ footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #3131
 /* remove the bullet on the list of blog post comments */
 .content ul.comments li { background-image: none !important; padding-left: 0; }
 
+/* remove the bullet on the pager list and changing the style */
+.content ul.pager { width: 270px; clear: both; padding: 6px 0; line-height: 17px; font-size: 13px; text-align: left; }
+.content ul.pager li { background-image: none !important; padding: 0; }
+.content ul.pager li span, .content ul.pager li a { padding: 5px 8px; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+
 /* move the comment count shape into the same line as the rest of the metadata */
 .commentcount { margin-top: -40px !important; }
 .commentcount a { font-family: "PT Sans", Arial, Helvetica, sans-serif; font-size: 12px; color: #555; }
@@ -47,3 +52,5 @@ footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #3131
 
 /* add padding to top of sharebar when in a well so that it's centered vertically */
 .well .sharebar { padding-top: 14px; }
+
+ul.latest-twitter-list li { background-image: none; padding-left: 0; }

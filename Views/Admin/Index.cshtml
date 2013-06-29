@@ -1,0 +1,32 @@
+﻿﻿@model Raptor.Ericka.ViewModels.ThemeSettingsViewModel
+<style type="text/css">
+    select { width: 150px; }
+</style>
+
+@{ Layout.Title = string.Format("Raptor.Ericka » {0}", T("Accent Color").ToString()); }
+
+@using (Html.BeginFormAntiForgeryPost()) {
+    Html.ValidationSummary();
+    
+    <fieldset>
+        <select id="@Html.FieldIdFor(m => m.AccentCss)" name="@Html.FieldNameFor(m => m.AccentCss)">
+            <option value="blue.css" @if (Model.AccentCss.EndsWith("blue.css")) { <text>selected="selected"</text> }>@T("Blue")</option>
+            <option value="brown.css" @if (Model.AccentCss.EndsWith("brown.css")) { <text>selected="selected"</text> }>@T("Brown")</option>
+            <option value="green.css" @if (Model.AccentCss.EndsWith("green.css")) { <text>selected="selected"</text> }>@T("Green")</option>
+            <option value="orange.css" @if (Model.AccentCss.EndsWith("orange.css")) { <text>selected="selected"</text> }>@T("Orange")</option>
+            <option value="pink.css" @if (Model.AccentCss.EndsWith("pink.css")) { <text>selected="selected"</text> }>@T("Pink")</option>
+            <option value="red.css" @if (Model.AccentCss.EndsWith("red.css")) { <text>selected="selected"</text> }>@T("Red")</option>
+        </select>
+        <span class="hint">@T("Select the accent color that you want")</span>
+    </fieldset>
+
+    <fieldset>
+        <img src="@Href("~//Themes/Raptor.Ericka/Content/Admin/Colors.png")" alt="Sample of Theme Colors" />
+        <span class="hint">@("Above you can see the available colors in action")</span>
+    </fieldset>
+    
+    <fieldset>
+        <legend></legend>
+        <button class="primaryAction" type="submit" name="submit.Save" value="submit.Save">@T("Save")</button>
+    </fieldset>
+}
