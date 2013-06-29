@@ -53,4 +53,8 @@ footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #3131
 /* add padding to top of sharebar when in a well so that it's centered vertically */
 .well .sharebar { padding-top: 14px; }
 
+/* remove the default bullet on TwitterWidget posts */
 ul.latest-twitter-list li { background-image: none; padding-left: 0; }
+
+/* fix icon width for social icons with font awesome v3.2.1*/
+.asocial a [class^="icon-"], a [class*=" icon-"] { display: inline-block; }
