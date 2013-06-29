@@ -23,6 +23,9 @@
   <Match Path="/">
     <Place Parts_Title="-"/>
   </Match>
+  <Match Path="/Support">
+    <Place Parts_Title="-"/>
+  </Match>
   <Match Path="/About">
     <Place Parts_Title="-"/>
   </Match>
