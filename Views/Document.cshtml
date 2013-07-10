@@ -32,7 +32,7 @@
 <head>
     <title>@Html.Title(title, siteName)</title>
     @Display(Model.Head)
-    <script>(function (d) { d.className = "dyn" + d.className.substring(6, d.className.length); })(document.documentElement);</script>
+    <script>(function (d) { d.className = "dyn " + d.className.substring(6, d.className.length); })(document.documentElement);</script>
 </head>
 <body>
     <!--[if lt IE7]>
