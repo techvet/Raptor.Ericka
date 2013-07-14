@@ -36,6 +36,7 @@ footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #3131
 .content ul.pager { width: 270px; clear: both; padding: 6px 0; line-height: 17px; font-size: 13px; text-align: left; }
 .content ul.pager li { background-image: none !important; padding: 0; }
 .content ul.pager li span, .content ul.pager li a { padding: 5px 8px; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+.content ul.pager .dots { background: #fff; color: #666; background: #fff; border: 1px solid #ddd; }
 
 /* move the comment count shape into the same line as the rest of the metadata */
 .commentcount { margin-top: -40px !important; }

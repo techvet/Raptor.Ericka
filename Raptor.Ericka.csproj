@@ -82,7 +82,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\filter.js" />
-    <Content Include="Scripts\html5shim.js" />
+    <Content Include="Scripts\respond.min.js" />
     <Content Include="Styles\blue.css" />
     <Content Include="Styles\bootstrap-responsive.min.css" />
     <Content Include="Styles\bootstrap.min.css" />
