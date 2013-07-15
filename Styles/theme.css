@@ -1,4 +1,5 @@
-/* sticky footer */
+/* STICKY FOOTER
+================================================== */
 html, body { height: 100%; }
 /* The html and body elements cannot have any padding or margin. */
 #layout-wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -273px; }
@@ -13,25 +14,34 @@ html, body { height: 100%; }
     /* Lastly, apply responsive CSS fixes as necessary */
 }
 
-/* remove styling on header tag for article blocks */
+/* MODIFY HEADER TAGS
+================================================== */
 article header { padding: 0; border-bottom: none; }
 
 @media (max-width: 767px) {
     article header { margin-left: 0px; margin-right: 0px; }
 }
 
+/* MODIFY HEADINGS
+================================================== */
 /* match footer h1 to template's footer h4 so we don't have to override shape */
 footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #313131; margin-bottom: 4px; color: #ccc; line-height: 20px; }
 
 /* match sidebar h1 to template's sidebar h4 so we don't have to override shape */
 .sidebar h1 { font-size: 14px; color: #888; line-height: 18px; margin-bottom: 5px; padding-bottom: 10px; text-transform: uppercase; border-bottom: 1px solid #eee; }
 
+/* change heading title on blog-post */
+.blog-post h2 { font-size: 25px; line-height: 30px; }
+
+/* MODIFY LISTS
+================================================== */
 /* remove the bullet on the list of blog posts */
 .content ul.blog-posts li { background-image: none !important; padding-left: 0; }
 
 /* remove the bullet on the list of blog post comments */
 .content ul.comments li { background-image: none !important; padding-left: 0; }
 
+/* remove the bullet in the list of archive posts */
 .archive-trail + ul > li { background-image: none !important; padding-left: 0; }
 
 /* remove the bullet on the pager list and changing the style */
@@ -40,24 +50,30 @@ footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #3131
 .content ul.pager li span, .content ul.pager li a { padding: 5px 8px; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
 .content ul.pager .dots { background: #fff; color: #666; background: #fff; border: 1px solid #ddd; }
 
+/* remove the default bullet on TwitterWidget posts */
+ul.latest-twitter-list li { background-image: none; padding-left: 0; }
+
+
+/* MODIFY COMMENTS
+================================================== */
 /* move the comment count shape into the same line as the rest of the metadata */
 .commentcount { margin-top: -40px !important; }
 .commentcount a { font-family: "PT Sans", Arial, Helvetica, sans-serif; font-size: 12px; color: #555; }
 
-/* change heading title on blog-post */
-.blog-post h2 { font-size: 25px; line-height: 30px; }
-
 /* change line-height on blog-post so CommentCount shape lines up properly */
 .blog-post .metadata { line-height: 20px; }
 
+/* MODIFY BLOG STYLING
+================================================== */
 /* remove extra margin from well on blog-post */
 .blog-post .respond.well { margin-bottom: 0; }
 
+/* SHAREBAR STYLING
+================================================== */
 /* add padding to top of sharebar when in a well so that it's centered vertically */
 .well .sharebar { padding-top: 14px; }
 
-/* remove the default bullet on TwitterWidget posts */
-ul.latest-twitter-list li { background-image: none; padding-left: 0; }
-
+/* FONT AWESOME STYLING
+================================================== */
 /* fix icon width for social icons with font awesome v3.2.1*/
 .asocial a [class^="icon-"], a [class*=" icon-"] { display: inline-block; }
