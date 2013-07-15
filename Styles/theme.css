@@ -7,6 +7,7 @@ html, body { height: 100%; }
 #push, #footer { height: 270px; }
 /* Set the fixed height of the footer here */
 #footer { margin-top: 0; padding-top: 0; }
+#footer .container { padding-top: 10px; }
 .content { margin-bottom: 20px; }
 
 @media (max-width: 767px) {
@@ -17,21 +18,11 @@ html, body { height: 100%; }
 /* MODIFY HEADER TAGS
 ================================================== */
 article header { padding: 0; border-bottom: none; }
+header span { font-family: inherit; }
 
 @media (max-width: 767px) {
     article header { margin-left: 0px; margin-right: 0px; }
 }
-
-/* MODIFY HEADINGS
-================================================== */
-/* match footer h1 to template's footer h4 so we don't have to override shape */
-footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #313131; margin-bottom: 4px; color: #ccc; line-height: 20px; }
-
-/* match sidebar h1 to template's sidebar h4 so we don't have to override shape */
-.sidebar h1 { font-size: 14px; color: #888; line-height: 18px; margin-bottom: 5px; padding-bottom: 10px; text-transform: uppercase; border-bottom: 1px solid #eee; }
-
-/* change heading title on blog-post */
-.blog-post h2 { font-size: 25px; line-height: 30px; }
 
 /* MODIFY LISTS
 ================================================== */

@@ -20,26 +20,11 @@
     <Place Parts_Common_Metadata="-"/>
   </Match>
 
-  <Match Path="/">
-    <Place Parts_Title="-"/>
-  </Match>
-  <Match Path="/Support">
-    <Place Parts_Title="-"/>
-  </Match>
-  <Match Path="/About">
-    <Place Parts_Title="-"/>
-  </Match>
-  <Match Path="/Contact">
-    <Place Parts_Title="-"/>
-  </Match>
-  <Match Path="/Team">
-    <Place Parts_Title="-"/>
-  </Match>
-  <Match Path="/Blog">
+  <Match ContentType="Blog">
     <Place Parts_Title="-"/>
     <Place Parts_Common_Metadata="-"/>
   </Match>
-
+  
   <Match ContentType="BlogPost">
     <Match DisplayType="Summary">
       <Place Parts_Tags_ShowTags="-"/>
