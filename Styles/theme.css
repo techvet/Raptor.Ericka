@@ -32,6 +32,8 @@ footer h1 { font-size: 15px; padding-bottom: 6px; border-bottom: 1px solid #3131
 /* remove the bullet on the list of blog post comments */
 .content ul.comments li { background-image: none !important; padding-left: 0; }
 
+.archive-trail + ul > li { background-image: none !important; padding-left: 0; }
+
 /* remove the bullet on the pager list and changing the style */
 .content ul.pager { width: 270px; clear: both; padding: 6px 0; line-height: 17px; font-size: 13px; text-align: left; }
 .content ul.pager li { background-image: none !important; padding: 0; }
