@@ -1,6 +1,6 @@
 Name: Raptor.Ericka
 Author: Raptor Concepts
 Website: http://raptorconcepts.com
-Description: Ericka is a HTML5/CSS3 responsive theme based on Twitter Bootstrap. It comes 40 different layouts and supports all features of twitter bootstrap. You can easily add extra options like slider, accordion, tool tip, model box, etc., on the fly. It also has 6 different colors namely Red, Orange, Brown, Blue, Pink and Green. This theme works great on almost all types of sites. Most of the pages in this theme are very unique which makes Ericka stand out from Crowd. If you are planning to buy theme for your site, then consider Ericka.
-Version: 2.9
-Tags: blog, bootstrap, business, coming soon, creative, pricing table, responsive, resume, support
+Description: Ericka is a HTML5/CSS3 responsive theme based on Twitter Bootstrap. It comes with 40 different layouts and supports all features of Twitter Bootstrap. You can easily add extra options like sliders, accordions, tooltips, model box, etc. It also has 6 different colors: Red, Orange, Brown, Blue, Pink and Green. This theme works great on almost all types of sites. Most of the pages in this theme are very unique which makes Ericka stand out from the crowd.
+Version: 2.9.1
+Tags: Twitter, Bootstrap, html5, css3, Boilerplate, FontAwesome, blog
