@@ -44,6 +44,8 @@ header span { font-family: inherit; }
 /* remove the default bullet on TwitterWidget posts */
 ul.latest-twitter-list li { background-image: none; padding-left: 0; }
 
+/* remove the default bullet on tab lists */
+.tabbable ul > li { background-image: none; padding-left: 0; }
 
 /* MODIFY COMMENTS
 ================================================== */
@@ -68,3 +70,9 @@ ul.latest-twitter-list li { background-image: none; padding-left: 0; }
 ================================================== */
 /* fix icon width for social icons with font awesome v3.2.1*/
 .asocial a [class^="icon-"], a [class*=" icon-"] { display: inline-block; }
+
+/* ACCORDION STYLING
+================================================== */
+.accordion-heading i { padding: 5px 6px !important; }
+.accordion-heading h5 a { font-size: 16px; color: #888; }
+.events .accordion-heading h5 a { color: #fff; }
