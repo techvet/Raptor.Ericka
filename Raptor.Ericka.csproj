@@ -64,13 +64,22 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\1.jpg" />
+    <Content Include="Content\2.jpg" />
+    <Content Include="Content\3.jpg" />
+    <Content Include="Content\4.jpg" />
+    <Content Include="Content\5.jpg" />
     <Content Include="Content\Admin\Colors.png" />
+    <Content Include="Content\amazon_b.png" />
+    <Content Include="Content\bg_direction_nav.png" />
     <Content Include="Content\dot.png" />
+    <Content Include="Content\facebook_b.png" />
     <Content Include="Content\fback.png" />
-    <Content Include="Content\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="Content\font\font-awesome\fontawesome-webfont.svg" />
     <Content Include="Content\glyphicons-halflings-white.png" />
     <Content Include="Content\glyphicons-halflings.png" />
     <Content Include="Content\body-back.png" />
+    <Content Include="Content\google_b.png" />
     <Content Include="Content\list-b.png" />
     <Content Include="Content\list-g.png" />
     <Content Include="Content\list-o.png" />
@@ -78,7 +87,28 @@
     <Content Include="Content\list-r.png" />
     <Content Include="Content\list-y.png" />
     <Content Include="Content\header-back.png" />
+    <Content Include="Content\skype_b.png" />
+    <Content Include="Content\twitter_b.png" />
+    <Content Include="Content\youtube_b.png" />
+    <Content Include="PageTemplates\Careers.html" />
+    <Content Include="PageTemplates\Clients.html" />
+    <Content Include="PageTemplates\ComingSoon.html" />
+    <Content Include="PageTemplates\Events.html" />
+    <Content Include="PageTemplates\Faq.html" />
+    <Content Include="PageTemplates\Features.html" />
+    <Content Include="PageTemplates\Features1.html" />
+    <Content Include="PageTemplates\Features2.html" />
+    <Content Include="PageTemplates\Pricing.html" />
+    <Content Include="PageTemplates\Process.html" />
+    <Content Include="PageTemplates\Products.html" />
+    <Content Include="PageTemplates\Project.html" />
+    <Content Include="PageTemplates\Resume.html" />
+    <Content Include="PageTemplates\Review.html" />
+    <Content Include="PageTemplates\Service.html" />
+    <Content Include="PageTemplates\Service1.html" />
     <Content Include="PageTemplates\Support.html" />
+    <Content Include="PageTemplates\Testimonials.html" />
+    <Content Include="PageTemplates\Timeline.html" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\filter.js" />
@@ -126,24 +156,29 @@
     <Folder Include="Zones\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\font-awesome\fontawesome-webfont.eot" />
-    <Content Include="Content\font-awesome\fontawesome-webfont.ttf" />
-    <Content Include="Content\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="Content\font\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="Content\font\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="Content\font\font-awesome\fontawesome-webfont.woff" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\font-awesome\FontAwesome.otf" />
+    <Content Include="Content\font\font-awesome\FontAwesome.otf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\CommentReplyButton.cshtml" />
+    <Content Include="Views\Branding.cshtml" />
     <None Include="Views\Menu.cshtml" />
     <Content Include="Views\Parts\Comments.cshtml" />
     <Content Include="Views\Parts\CommentForm.cshtml" />
     <Content Include="Views\EditorTemplates\Parts.Comment.cshtml" />
     <Content Include="Views\Parts\ListOfComments.cshtml" />
     <Content Include="Views\Parts\Comment.cshtml" />
+    <Content Include="Views\User.cshtml" />
+    <Content Include="Views\Parts\Title.cshtml" />
+    <Content Include="Views\Widget.Wrapper.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Views\MenuItem.cshtml" />
@@ -156,9 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\HeaderContact.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Branding.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\TwitterWidget.cshtml" />
@@ -180,6 +212,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\NotFound.cshtml" />
+    <Content Include="Views\Pager.cshtml" />
+    <Content Include="Views\Pager.First.cshtml" />
+    <Content Include="Views\Pager.Gap.cshtml" />
+    <Content Include="Views\Pager.Last.cshtml" />
+    <Content Include="Views\Orchard.Users\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Orchard.Users\Account\LostPassword.cshtml" />
+    <Content Include="Views\Orchard.Users\Account\RequestLostPassword.cshtml" />
     <None Include="Views\Parts\Common.Metadata.Summary.cshtml" />
   </ItemGroup>
   <ItemGroup>
