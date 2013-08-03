@@ -64,7 +64,7 @@ ul.latest-twitter-list li { background-image: none; padding-left: 0; }
 /* SHAREBAR STYLING
 ================================================== */
 /* add padding to top of sharebar when in a well so that it's centered vertically */
-.well .sharebar { padding-top: 14px; }
+.well .sharebar { padding-top: 8px; }
 
 /* FONT AWESOME STYLING
 ================================================== */
