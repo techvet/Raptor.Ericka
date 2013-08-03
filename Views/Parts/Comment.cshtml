@@ -13,7 +13,7 @@
     <article id="comment-@comment.Id">
         @Display.CommentAuthor(ContentPart: comment)
         @Display.CommentMetadata(ContentPart: comment)
-        <p>@Html.Raw(Convert.ToString(Model.FormattedText))</p>
+        <p>@Display.CommentText(ContentPart: Model.ContentPart, ContentItem: Model.ContentItem)</p>
         <div class="clearfix"></div>
         @if (comments.ThreadedComments) {
             <div class="button">
