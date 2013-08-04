@@ -32,9 +32,10 @@
     <Match DisplayType="Detail">
       <Place Parts_Tags_ShowTags="-"/>
       <Place Parts_Comments_Count="Meta:after"/>
-      <Place Parts_Share_ShareBar="Content:after:1"/>
-      <Place Parts_Comments="Content:after:2"/>
-      <Place Parts_NextPreviousLinks="Content:after:3"/>
+      <Place Parts_Share_ShareBar="Content:10.1"/>
+      <Place Parts_ListOfComments="Content:10.2" />
+      <Place Parts_CommentForm="Content:10.3" />
+      <Place Parts_NextPreviousLinks="Content:10.4"/>
     </Match>
   </Match>
 </Placement>
